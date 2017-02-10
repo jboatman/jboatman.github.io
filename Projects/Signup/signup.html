@@ -6,7 +6,30 @@
 
 </head>
 <body>
-	test
+	<div class="zingle-nav signed-out-header" role="navigation">
+    	<div class="row">
+    		<div class="col-sm-12">
+	      		<ul class="zingle-header">
+	        		<li class="mode-menu nav-item">
+	          			<a target="_self" href="/">
+	            			<div class="icon-logo-withtext-green header-logo with-text" id="header-logo">Mode</div>
+						</a>
+					</li>
+				</ul>
+				<ul class="action-nav">
+					<li class="action-item"><a class="sign-in" target="_self" href="/signin">Sign In</a></li>
+				</ul>
+			</div>
+		</div>
+  	</div>
+  	<div class="signin-wrapper">
+  		<h1 class="signin-h1">Hello! Let's get started.</h1>
+  		<h4 class="signin-h4">Sign up with your work email and we’ll send you a confirmation.</h4>
+  		<div class="input-wrapper">
+  			<input name="email" id="email" class="Input" autofocus="autofocus" required="required" ng-model="email" ng-init="email = ''" type="email">
+
+  		</div>
+  	</div>
 
 
 <script src="js/script.js"></script>

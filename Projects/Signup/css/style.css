@@ -1,0 +1,121 @@
+body {
+	font-family: "proxima nova";
+	font-size:12px;
+	margin:0;
+	padding:0;
+	color:#354c61;
+	font-weight:200;
+}
+a {
+	text-decoration: none;
+}
+
+.zingle-nav {
+    margin-bottom: 0 !important;
+    background-color: #fff;
+    border-bottom: 1px solid #F1F2F5;
+    display:table;
+    width:100%;
+}
+.zingle-nav .zingle-header {
+    float: left;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    margin-left: -10px;
+    position: relative;
+}
+.zingle-nav .action-nav {
+    display: block;
+    margin: 0;
+    padding: 0;
+    float: right;
+    list-style-type: none;
+    position: relative;
+}
+.zingle-nav .action-nav .action-item {
+    float: right;
+    line-height: 55px;
+    margin-left: 15px;
+}
+.zingle-nav .action-nav > li {
+    display: block;
+    float: left;
+    line-height: 55px;
+    height: 55px;
+}
+.zingle-nav .action-nav .action-item .sign-in {
+    color: #00A0DE;
+    font-weight: normal;
+    display: inline-block;
+    line-height: 30px;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+.zingle-nav .header-logo.with-text {
+    width: 200px;
+}
+.zingle-nav .header-logo {
+    
+    display: inline-block;
+    border: none;
+    text-indent: -9999em;
+    height: auto;
+    padding: 0;
+    line-height: 55px;
+    background-size: auto 35px;
+    background-image:url('https://www.zingle.me/wp-content/uploads/2015/07/Zingle_logo_100x40-01.png');
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position:25px 10px;
+}
+.signin-wrapper {
+	margin: 0 auto;
+    width: 600px;
+    text-align: center;
+    margin-top:50px;
+}
+.signin-h1 {
+	font-size:2.3rem;
+	margin-bottom:15px;
+}
+.signin-h4 {
+    color: #63656E;
+    font-weight: 300;
+    font-size: 1.1rem;
+    margin-top:5px;
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+.input-wrapper {
+	width:365px;
+	margin:0 auto;
+	margin-top:40px;
+}
+input {
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    padding: 7px 10px 7px 40px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    border: 1px solid #c9d3d8;
+    background-color: transparent;
+    border-radius: 3px;
+    resize: none;
+    font-weight:200;
+    vertical-align: top;
+    font-size: 1rem;
+    font-family: "proxima-nova", "Lato", Helvetica, Arial, sans-serif !important;
+    webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+input:focus {
+	border:1px solid #00A0DE;
+}
+
+

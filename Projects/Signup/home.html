@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class="home-minimal-html ">
+<head>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" ></script>
+	<link href="css/style.css" rel="stylesheet">
+
+<style>
+.main-header .main-nav .blue-button {
+    color: white;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.main-header .main-nav div {
+    color: rgba(255,255,255,0.75);
+    cursor: pointer;
+    display: block;
+    float: right;
+    line-height: 30px;
+    margin-left: 29px;
+    -webkit-transition: all .15s ease;
+    transition: all .15s ease;
+}
+.blue-button.small {
+    border-radius: 3px;
+    font-family: brandon-grotesque,Helvetica,sans-serif;
+    font-weight: 900;
+    padding: 0 17px;
+    display:flex;
+    line-height: 34px;
+    top: 10px;
+    position: relative;
+}
+
+.blue-button {
+    background: #00b4ff;
+    border-radius: 5px;
+    border: 0;
+    box-shadow: 0 4px 6px rgba(50,50,93,0.11), 0 1px 3px rgba(0,0,0,0.08);
+    color: white;
+    font-family: Lato,Helvetica,sans-serif;
+    font-size: 11px;
+    font-weight: 800;
+    line-height: 48px;
+    padding: 0 33px;
+    -webkit-transition: all .25s ease;
+    transition: all .25s ease;
+}
+.blue-button:hover {
+    cursor:pointer;
+}
+.zingle-nav .action-nav {
+    margin-right: 20px;
+}
+.blue-button:hover {
+    background:#1dc5ff;
+    box-shadow:0 7px 14px rgba(50,50,93,0.1),0 3px 6px rgba(0,0,0,0.08);
+    -webkit-transform:translateY(-1px);
+    transform:translateY(-1px)
+}
+.blue-button:active {
+    background:#00b4ff;
+    box-shadow:0 4px 6px rgba(50,50,93,0.11),0 1px 3px rgba(0,0,0,0.08);
+}
+.blue-button .signup-arrow {
+    display: inline;
+    margin-left: 6px;
+}
+
+</style>
+</head>
+<body>
+	<div class="zingle-nav signed-out-header" role="navigation">
+    	<div class="row">
+    		<div class="col-sm-12">
+	      		<ul class="zingle-header">
+	        		<li class="mode-menu nav-item">
+	          			<a target="_self" href="/">
+	            			<div class="icon-logo-withtext-green header-logo with-text" id="header-logo">Mode</div>
+						      </a>
+					   </li>
+				    </ul>
+				<ul class="action-nav">
+					<li class="action-item" style="float:left;"><a class="sign-in" target="_self" href="/signin">Sign In</a></li>
+          <li class="action-item" style="float:right;">
+              <a href='./signup.html'><div class="blue-button small" id="signup"><span>Sign Up</span><div class="signup-arrow"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="7px" height="6px"><path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M3.011,0.530 L3.011,0.530 L3.011,1.479 L3.011,1.532 C2.997,1.775 2.801,1.969 2.558,1.973 C2.556,1.973 2.553,1.973 2.550,1.973 C2.548,1.973 2.545,1.973 2.542,1.973 L0.513,1.973 L0.409,1.973 C0.179,1.999 -0.000,2.197 -0.000,2.437 L-0.000,3.535 C-0.000,3.772 0.173,3.967 0.399,3.998 L0.523,3.998 L2.498,3.998 L2.602,3.998 C2.824,4.023 2.998,4.207 3.011,4.435 L3.011,4.489 L3.011,5.689 L3.011,5.689 C3.011,5.861 3.149,6.001 3.319,6.001 C3.383,6.001 3.444,5.981 3.493,5.947 L3.535,5.911 L6.835,3.361 C6.937,3.276 7.003,3.146 7.003,3.001 C7.003,2.856 6.937,2.726 6.835,2.641 L3.538,0.312 L3.488,0.270 C3.439,0.237 3.381,0.219 3.319,0.219 C3.149,0.219 3.011,0.359 3.011,0.530 Z"></path>
+              </svg>
+              </div>
+          </a>
+        </div>
+				</ul>
+
+			</div>
+		</div>
+  	</div>
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class="home-minimal-html ">
+<head>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" ></script>
+	<link href="css/style.css" rel="stylesheet">
+
+</head>
+<body>
+	<div class="zingle-nav signed-out-header" role="navigation">
+    	<div class="row">
+    		<div class="col-sm-12">
+	      		<ul class="zingle-header">
+	        		<li class="mode-menu nav-item">
+	          			<a target="_self" href="/">
+	            			<div class="icon-logo-withtext-green header-logo with-text" id="header-logo">Mode</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+  	</div>
+  	<div class="signin-wrapper">
+  		<h1 class="signin-h1">Welcome!<br> Let's create your profile.</h1>
+  		
+  		<div class="input-wrapper">
+  			<div class="form-group">
+          <label class="control-label" for="user_name">Full name:</label>
+          <input class="form-control" autofocus="autofocus" name="user[name]" id="user_name" type="text">
+        </div>
+        <div class="form-group">
+              <label class="control-label" for="user_username">Username:</label>
+              <span ng-show="signupForm['user[username]'].$valid" class="form-success-alert ng-hide hider" style=""><i class="icon-signup-username-success align-md-icon username-success-icon"></i>Available</span>
+              <input class="form-control username-input ng-pristine ng-untouched ng-valid-start-char ng-valid-alpha-numb ng-valid-minlength ng-valid-maxlength ng-invalid ng-invalid-username-available ng-valid-checking-username ng-empty ng-invalid-required" autocomplete="off" required="required" heap-ignore="true" unique-name="true" ng-minlength="4" ng-maxlength="32" ng-model="username" ng-init="username=''" name="user[username]" id="user_username" type="text">
+              <div id="username-check" class="form-control-info ng-hide hider" ng-show="signupForm['user[username]'].$error.checkingUsername" style="">Checking username...</div>
+              <div id="username-reqs" class="form-control-info" ng-show="signupForm['user[username]'].$pristine || signupForm['user[username]'].$error.minlength || signupForm['user[username]'].$error.maxlength">Between 4-32 characters</div>
+              <div ng-show="signupForm['user[username]'].$dirty &amp;&amp; signupForm['user[username]'].$error.usernameAvailable" class="ng-hide" style="">Username not available</div>
+        </div>
+        <div class="form-group">
+          <label class="control-label" for="company_name">Company Name:</label>
+          <input class="form-control" autofocus="autofocus" name="user[name]" id="company_name" type="text">
+        </div>
+        <div class="form-group">
+                <label class="control-label" for="user_password">Password:</label>
+                <input class="form-control ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required ng-valid-minlength" required="required" heap-ignore="true" ng-model="password" ng-minlength="4" name="user[password]" id="user_password" type="password">
+
+                <div class="form-control-info">
+                  <span ng-show="signupForm['user[password]'].$pristine || signupForm['user[password]'].$error.minlength" class="">At least 4 characters</span>
+                </div>
+        </div>
+        <div class="form-group">
+                <label class="control-label" for="user_password_confirmation">Confirm password:</label>
+                <input class="form-control ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required" required="required" heap-ignore="true" ng-model="confirm" name="user[password_confirmation]" id="user_password_confirmation" type="password">
+        </div>
+  		<a href="./profile.html"><div class="submit-button">Finish</div></a>
+  			
+  		
+  	</div>
+
+
+<script src="js/script.js"></script>
+</body>
+</html>

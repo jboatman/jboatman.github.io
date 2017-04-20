@@ -1,5 +1,7 @@
 <html>
 <head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
 <style>
 div {
 	display:inline-block;
@@ -7,11 +9,6 @@ div {
 	text-align:center;
 	margin-top:20px;
 }
-
-
-
-
-
 
 </style>
 
@@ -22,9 +19,22 @@ div {
 <img src="pic-final.png" style="width:300px;" />
 </div>
 <div style="text-align:center;margin-top:20px;">
-<img src="jeremy.png" style="width:280px;" />
+<img class="jeremy" src="jeremy.png" style="width:280px;" />
 </div>
 </div>
+	
+<script>
+$(".jeremy")
+  .mouseover(function() {
+    
+    alert('test');
+  })
+  .mouseout(function() {
+   alert('test');
+  });
+	
+	
+</script>
 </body>
 </html>
 

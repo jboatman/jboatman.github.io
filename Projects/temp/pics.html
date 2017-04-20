@@ -26,14 +26,11 @@ div {
 <script>
 $(".jeremy")
   .mouseover(function() {
-    
-    alert('test');
+    $(this).attr("src","jeremy2.png")
   })
   .mouseout(function() {
-   alert('test');
-  });
-	
-	
+   $(this).attr("src","jeremy.png")
+  });	
 </script>
 </body>
 </html>
